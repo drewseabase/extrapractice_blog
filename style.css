@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0.3rem;
-    background-color: antiquewhite;
+    background-color: orange;
     
 }
 
@@ -16,12 +16,12 @@
 .day-forecast
 {
     background: right/contain content-box 
-    border-box no-repeat white;
+    border-box no-repeat;
 }
 
 .day-forecast > h2, .day-forecast > p
 {
     margin: 0.2rem;
     font-size: 1rem;
-    color: orangered
+    color: aquamarine
 }
