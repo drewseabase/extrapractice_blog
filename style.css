@@ -16,5 +16,11 @@
 .day-forecast
 {
     background: right/contain content-box 
-    border-box no-repeat url("/shared-assets/images/examples/rain.svg") white;
+    border-box no-repeat white;
+}
+
+.day-forecast > h2, .day-forecast > p
+{
+    margin: 0.2rem;
+    font-size: 1rem;
 }
