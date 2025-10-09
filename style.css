@@ -2,6 +2,13 @@
 {
     margin: 0;
     padding: 0.3rem;
-    background-color: black;
-    font-style: antiquewhite;
+    background-color: antiquewhite;
+    
+}
+
+.forecast > h1, .day-forecast 
+{
+    margin :0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
 }
