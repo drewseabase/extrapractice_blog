@@ -52,7 +52,7 @@ nav a:hover
 #blog-alignment img 
 {
     display: block;
-    transform: translateX(-80px);
+    transform: translateX(-50px);
 }
 
 img 
@@ -67,4 +67,8 @@ img
 }
 
 body{font-family: system-ui, sans-serif; background:#ffff; color: #222; margin:0;}
+h1, h2, h3{line-height: 1.2; margin: 0.6em 0 0.3em;}
+p{margin: 0 0 1em;}
+a{text-decoration: none;}
+a:hover {text-decoration: underline;}
 
