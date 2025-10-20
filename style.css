@@ -53,5 +53,9 @@ img
 {
     width: min(100%, 640px);
     margin: 14px auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
