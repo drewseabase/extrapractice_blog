@@ -34,11 +34,17 @@ nav a:hover
     background-color: #e6e6e6;
     transform: translateY(-1px);
     border-radius: 6px;
-    
 }
 
 #logo 
 {
     font-size: 35px;
     flex: 0 0 auto;
+}
+
+#blog-alignment
+{
+    max-width: 600px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
 }
