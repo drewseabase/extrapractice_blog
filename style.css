@@ -58,7 +58,7 @@ img
     overflow: hidden;
     border-radius: 8px;
     object-fit: cover;
-    margin-left: 100px;
+    margin-right: 100px;
 }
 
 body{font-family: system-ui, sans-serif; background:#ffff; color: #222; margin:0;}
