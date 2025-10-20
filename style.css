@@ -51,8 +51,9 @@ nav a:hover
 
 img 
 {
-    width: min(100%, 640px);
-    margin: 14px auto;
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
     aspect-ratio: 16/9;
     overflow: hidden;
     border-radius: 8px;
