@@ -17,12 +17,13 @@ nav ul
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-nav a 
-{
     text-decoration: none;
     color: inherit;
+}
+
+nav a:hover
+{
+    
 }
 
 #logo 
