@@ -48,3 +48,9 @@ nav a:hover
     margin: 0 auto 16px;
     line-height: 1.6;
 }
+
+img 
+{
+    width: 100%;
+}
+
