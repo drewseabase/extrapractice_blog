@@ -52,7 +52,7 @@ nav a:hover
 #blog-alignment img 
 {
     display: block;
-    transform: translateX(-50px);
+    transform: translateX(-80px);
 }
 
 img 
