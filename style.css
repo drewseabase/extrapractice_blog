@@ -49,6 +49,12 @@ nav a:hover
     line-height: 1.6;
 }
 
+#blog-alignment img 
+{
+    display: block;
+    transform: translateX(-40px);
+}
+
 img 
 {
     width: 100%;
@@ -58,7 +64,6 @@ img
     overflow: hidden;
     border-radius: 8px;
     object-fit: cover;
-    margin-right: 1000px;
 }
 
 body{font-family: system-ui, sans-serif; background:#ffff; color: #222; margin:0;}
