@@ -15,5 +15,5 @@ header {
 #logo 
 {
     font-size: 50px;
-    background-color: aquamarine;
+    flex: 0 0 auto;
 }
