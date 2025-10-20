@@ -49,8 +49,9 @@ nav a:hover
     line-height: 1.6;
 }
 
-img 
+#img-frame 
 {
-    width: 100%;
+    width: min(100%, 640px);
+    margin: 14px auto;
 }
 
