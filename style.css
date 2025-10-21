@@ -57,7 +57,7 @@ nav a:hover
 
 img 
 {
-    width: 100%;
+    width: min(100%, 640px);
     height: 100%;
     margin: 20px;
     aspect-ratio: 16/9;
