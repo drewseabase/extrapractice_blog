@@ -36,6 +36,9 @@ nav a:hover
     border-radius: 6px;
 }
 
+.left nav ul{display: block;}
+.left nav li{display: block; margin-bottom: 6px;}
+
 #logo 
 {
     font-size: 35px;
