@@ -83,3 +83,13 @@ a:hover {text-decoration: underline;}
 .two-col .main{flex: 1 1 65%;}
 .two-col .aside{flex: 1 1 35%;}
 
+.three-col {display: flex; gap: 24px; align-items: flex-start;}
+.three-col .left, .three-col .right{flex: 0 0 220px;}
+.three-col .center {flex: 1 1 0;}
+
+.float-img {float: right; margin: 0 0 12px 18px; max-width: 45%;}
+figure{margin: 0 0 1em;}
+figcaption{font-size: 0.9rem; color: #555; text-align: center;}
+
+
+
