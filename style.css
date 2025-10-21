@@ -38,6 +38,15 @@ nav a:hover
 
 .left nav ul{display: block;}
 .left nav li{display: block; margin-bottom: 6px;}
+.left nav a 
+{
+    display: block;
+    padding: 6px 10px;
+    color: forestgreen;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
 
 #logo 
 {
