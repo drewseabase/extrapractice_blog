@@ -77,6 +77,9 @@ a:hover {text-decoration: underline;}
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 16px;
-    background-color: aquamarine;
 }
+
+.two-col{display: flex; gap: 24px; align-items: flex-start;}
+.two-col .main{flex: 1 1 65%;}
+.two-col .aside{flex: 1 1 35%;}
 
