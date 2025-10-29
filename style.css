@@ -6,10 +6,19 @@ body{
 #left_header ul 
 {
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     list-style: none;
     color: rgb(219, 212, 212);
 }
 
+#right_header ul
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    color: rgb(219, 212, 212)
+}
