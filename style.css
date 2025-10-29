@@ -1,14 +1,15 @@
 body{
-    background-color: rgb(43, 40, 40);
+    background-color: rgb(19, 17, 17);
     display: flex;
 }
 
-#header_left 
+body #left_header 
 {
-    display: flex;
+    
     justify-content: flex-start;
     flex-direction: row;
     gap: 20px;
     text-decoration: none;
+    color: whitesmoke;
 }
 
