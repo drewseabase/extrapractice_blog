@@ -6,22 +6,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-#left_header ul 
+header
 {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
     gap: 15px;
     list-style: none;
     color: rgb(219, 212, 212);
 }
 
-#right_header ul
-{
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
-    gap: 15px;
-    list-style: none;
-    color: rgb(219, 212, 212)
-}
