@@ -13,7 +13,7 @@ header
     padding: 10px 20px;
 }
 
-#left_header ul, #right_header ul
+header #left_header ul, header #right_header ul
 {
     display: flex;
     flex-direction: row;
