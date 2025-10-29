@@ -1,2 +1,13 @@
+body{
+    background-color: rgb(43, 40, 40);
+    display: flex;
+}
 
+body #header_left 
+{
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+}
 
