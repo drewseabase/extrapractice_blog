@@ -3,8 +3,9 @@ body{
     display: flex;
 }
 
-body #header_left 
+#header_left 
 {
+    display: flex;
     justify-content: flex-start;
     flex-direction: row;
     gap: 20px;
