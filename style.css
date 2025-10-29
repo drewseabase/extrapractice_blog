@@ -1,15 +1,15 @@
 body{
-    background-color: rgb(19, 17, 17);
+    background-color: rgb(32, 33, 36);
     display: flex;
 }
 
-body #left_header 
+#left_header ul 
 {
-    
+    display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    text-decoration: none;
-    color: whitesmoke;
+    list-style: none;
+    color: rgb(219, 212, 212);
 }
 
