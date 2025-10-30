@@ -8,9 +8,10 @@ body{
 header
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border: 1px solid orange;
 }
 
 #left ul, #right ul
@@ -25,5 +26,10 @@ a
 {
     color: rgb(219, 212, 212);
     text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: rgb(219, 212, 212);
 }
 
