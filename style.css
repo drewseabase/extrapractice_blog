@@ -23,7 +23,7 @@ header
     list-style: none;
     color: rgb(219, 212, 212);
 }
-#left{margin-left: 1px;}
+#left{margin-left: 0.1px;}
 #right{margin-right: 5px;}
 a{color: rgb(219, 212, 212); text-decoration: none;}
 a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
