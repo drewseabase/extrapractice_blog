@@ -18,7 +18,7 @@ header
     
 }
 
-h1{display: flex; justify-content: center; align-items: center; color: rgb(219, 212, 212); border: 1px solid orange;}
+h1{display: flex; justify-content: center; align-items: center; color: rgb(219, 212, 212); border: 1px solid orange; width: 100vw; height: 100vh;}
 
 #left ul, #right ul
 {
