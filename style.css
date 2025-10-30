@@ -4,13 +4,14 @@ body{
     background-color: rgb(32, 33, 36);
     display: flex;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 3px 20px;
+    padding: 3px 0;
     width: 100vw;
     border: 1px solid orange;
 }
@@ -23,7 +24,7 @@ header
     list-style: none;
     color: rgb(219, 212, 212);
 }
-#left{margin-left: 0.1px;}
+#left{margin-left: 0;}
 #right{margin-right: 5px;}
 a{color: rgb(219, 212, 212); text-decoration: none;}
 a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
