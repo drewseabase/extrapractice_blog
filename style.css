@@ -21,4 +21,9 @@ header
     list-style: none;
     color: rgb(219, 212, 212);
 }
+a
+{
+    color: rgb(219, 212, 212);
+    text-decoration: none;
+}
 
