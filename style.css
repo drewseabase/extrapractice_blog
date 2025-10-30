@@ -6,6 +6,8 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     border: 1px solid orange;
+    width: 100vw;
+    height: 100vh;
 }
 header
 {
