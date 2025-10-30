@@ -22,8 +22,8 @@ header
     list-style: none;
     color: rgb(219, 212, 212);
 }
-#left{margin-left: 40px;}
-#right{margin-right: 60px;}
+#left{margin-left: 10px;}
+#right{margin-right: 40px;}
 a{color: rgb(219, 212, 212); text-decoration: none;}
 a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
 
