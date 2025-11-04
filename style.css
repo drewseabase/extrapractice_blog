@@ -19,7 +19,7 @@ header
     
 }
 
-h1{display: flex; justify-content: center; align-items: center; color: rgb(85, 156, 103); width: 100%; height: 100%;}
+h1{display: flex; justify-content: center; align-items: center; color: rgb(136, 221, 157); width: 100%; height: 100%; border: 1px solid black;}
 
 #left ul, #right ul
 {
