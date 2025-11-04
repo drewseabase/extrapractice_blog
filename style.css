@@ -24,7 +24,7 @@ h1{
     align-items: center; 
     color: rgb(136, 221, 157); 
     width: 100vw; 
-    height: 100vh; 
+    height: 50vh; 
     border: 1px solid black;}
 
 #left ul, #right ul
