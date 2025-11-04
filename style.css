@@ -42,3 +42,8 @@ h1{
 a{color: rgb(219, 212, 212); text-decoration: none;}
 a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
 
+.search-bar{
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
