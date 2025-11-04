@@ -21,7 +21,7 @@ header
 h1{
     display: flex; 
     justify-content: center; 
-    align-items: center; 
+    align-items: flex-start; 
     color: rgb(136, 221, 157); 
     width: 100vw; 
     height: 25vh; 
