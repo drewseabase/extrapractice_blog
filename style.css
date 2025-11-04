@@ -45,6 +45,12 @@ a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
 .search-bar{
     overflow: hidden;
     background-color: #fafafa;
-    width: 500px;
+    width: 150px;
+}
+
+.search-bar input {
+    display: flex;
+    justify-content: center;
+    width: 150px;
 }
 
