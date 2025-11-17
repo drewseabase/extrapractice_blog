@@ -1,56 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+ :root{
+    --msu-green:#18453B;
+    --ink:#0f1416;
+    --bg:#0b0e10;
+    --text:#f5faf8;
+    --muted:#cfe3db;
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.45;
+  }
 
-body{
-    background-color: rgb(51, 84, 59);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Figtree', sans-serif;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-}
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3px 0;
-    width: 100%;
-    
-}
-h1{
-    display: flex; 
-    justify-content: center; 
-    align-items: flex-start; 
-    color: rgb(136, 221, 157); 
-    width: 100vw; 
-    height: 25vh; 
-    font-size: 4em;
-    
-    }
+  /* -------- HERO -------- */
+  .hero{
+    position:relative;
+    min-height:100svh; /* full viewport height on mobile too */
+    display:grid;
+    place-items:center;
+    text-align:center;
+    overflow:hidden;
+    isolation:isolate;
+  }
+  /* Parallax-ish background: fixed attachment */
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.65)),
+      /* ↓ Replace the URL with your team photo or a video poster image */
+      url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed; /* key for the simple parallax feel */
+    z-index:-2;
+    filter:saturate(1.05) contrast(1.05) brightness(.9);
+  }
+  /* Extra vignette */
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(120% 80% at 50% 20%, transparent 0 60%, rgba(0,0,0,.55) 100%);
+    z-index:-1;
+    pointer-events:none;
+  }
 
-#left ul, #right ul
-{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style: none;
-    color: rgb(219, 212, 212);
-}
-#left{margin-left: -15px;}
-#right{margin-right: 20px;}
-a{color: rgb(219, 212, 212); text-decoration: none;}
-a:hover{text-decoration: underline; color: rgb(219, 212, 212);}
+  .hero__inner{
+    max-width:var(--maxw);
+    padding: clamp(16px, 4vw, 40px);
+  }
+  .title{
+    font-weight:900;
+    letter-spacing:.4px;
+    margin:0 0 .4rem 0;
+    font-size: clamp(2.2rem, 6vw, 4.6rem);
+    text-shadow: 0 10px 30px rgba(0,0,0,.5);
+  }
+  .sub{
+    margin:0 auto;
+    max-width: 46ch;
+    font-size: clamp(1rem, 2.6vw, 1.3rem);
+    color:var(--muted);
+  }
 
-.search-bar{
-    overflow: hidden;
-    background-color: #fafafa;
-    width: 150px;
-}
+  /* Quick links pinned in the corner */
+  .quick{
+    position:fixed;
+    right: clamp(10px, 2vw, 22px);
+    bottom: clamp(10px, 2vw, 22px);
+    display:flex; gap:8px; flex-wrap:wrap;
+    z-index:10;
+  }
+  .quick a{
+    text-decoration:none;
+    color:#e7f3ee;
+    background: color-mix(in oklab, var(--msu-green) 88%, black 12%);
+    border:1px solid color-mix(in oklab, var(--msu-green) 70%, white 30%);
+    padding:.55rem .85rem;
+    border-radius:999px;
+    font-weight:700;
+    font-size:.92rem;
+    backdrop-filter: blur(4px);
+  }
 
-.search-bar input {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-}
+  /* -------- SECTIONS WRAPPER -------- */
+  main{
+    max-width:var(--maxw);
+    margin-inline:auto;
+  }
+  .band{
+    position:relative;
+    min-height:120vh;     /* tall so the sticky panel has room to “float” */
+    display:block;
+    padding: clamp(24px, 6vw, 80px) clamp(16px, 4vw, 24px);
+  }
+  /* Each band has a soft background to distinguish layers */
+  .band--roster{ background: linear-gradient(180deg, #0b0e10 0%, #0e1316 100%); }
+  .band--courses{ background: linear-gradient(180deg, #0e1316 0%, #0b0e10 100%); }
+  .band--history{ background: linear-gradient(180deg, #0b0e10 0%, #0e1316 100%); }
+
+  /* The sticky “card” that floats while scrolling */
+  .panel{
+    position: sticky;
+    top: 12vh;                   /* where it sticks */
+    margin-inline:auto;
+    max-width: 900px;
+    border-radius: 18px;
+    overflow:hidden;
+    border:1px solid #1e2428;
+    background:#0f1417;
+    box-shadow: 0 14px 40px rgba(0,0,0,.35);
+  }
+  .panel__media{
+    aspect-ratio: 16/9;         /* keep it tidy; replace images below */
+    background-size:cover;
+    background-position:center;
+    border-bottom:1px solid #1e2428;
+  }
+  .panel__body{
+    padding: clamp(16px, 3vw, 28px);
+  }
+  .eyebrow{
+    display:inline-block;
+    background:#0f2621;
+    color:#cfe9df;
+    border:1px solid #21483f;
+    padding:.38rem .65rem;
+    border-radius:999px;
+    font-weight:700;
+    font-size:.78rem;
+    letter-spacing:.2px;
+    margin-bottom:.6rem;
+  }
+  h2{ margin:.2rem 0 .4rem 0; font-size: clamp(1.4rem, 3.6vw, 2rem); }
+  p{ margin:.4rem 0 0 0; color:#d7e7e0; max-width:65ch }
+
+  .btn{
+    display:inline-block; margin-top:12px;
+    background:var(--msu-green);
+    color:var(--text); text-decoration:none;
+    border:1px solid #2b6a5b; border-radius:12px;
+    padding:.7rem 1rem; font-weight:800;
+  }
+
+  /* Placeholder images — swap these with your assets */
+  .img--roster{
+    background-image:
+      linear-gradient(180deg, rgba(24,69,59,.35), rgba(8,8,8,.55)),
+      url("roster.jpg");
+  }
+  .img--courses{
+    background-image:
+      linear-gradient(180deg, rgba(24,69,59,.35), rgba(8,8,8,.55)),
+      url("course.jpg");
+  }
+  .img--history{
+    background-image:
+      linear-gradient(180deg, rgba(24,69,59,.35), rgba(8,8,8,.55)),
+      url("history.jpg");
+  }
+
+  /* Accessibility: if user prefers less motion, remove the fixed background */
+  @media (prefers-reduced-motion: reduce){
+    .hero::before{ background-attachment:scroll; }
+  }
+
+  /* Make sure sticky feels good on very short viewports */
+  @media (max-height:700px){
+    .band{ min-height:140vh; }
+    .panel{ top: 8vh; }
+  }
 

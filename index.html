@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google(fake)</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MSU Cross Country — CSS-Only Hero & Sticky Sections</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav id="left">
-            <ul> 
-                <li><a href="about.html">About</a></li>
-                <li>Store</li>
-            </ul>
-            
-        </nav>
-        <nav id="right">
-            <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li><i class="fa-solid fa-bars"></i></li>
-                <li>Sign in</li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1><strong>Google</strong></h1>
-    </main>
-    <div class="search-bar">
-        <input type="text" placeholder="Search google or type a URL">. 
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__inner">
+      <h1 class="title">Michigan State Cross Country</h1>
+      <p class="sub">2025 Season&nbsp;|&nbsp;Every Mile Matters.</p>
     </div>
-    
+    <!-- Quick links pinned -->
+    <nav class="quick" aria-label="Quick links">
+      <a href="#roster">Roster</a>
+      <a href="#courses">Meets</a>
+      <a href="#history">History</a>
+    </nav>
+  </header>
+
+  <!-- ROSTER TEASER (sticky panel) -->
+  <main>
+    <section id="roster" class="band band--roster">
+      <article class="panel">
+        <div class="panel__media img--roster" role="img" aria-label="Featured team member"></div>
+        <div class="panel__body">
+          <span class="eyebrow">Featured Roster</span>
+          <h2>Meet the Team</h2>
+          <p>Faces, PRs, majors, and the humans behind the miles. Filter by year, hometown, or distance, and dive into each athlete’s story.</p>
+          <a class="btn" href="/roster">View Full Roster</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- COURSES / MAPS TEASER (sticky panel) -->
+    <section id="courses" class="band band--courses">
+      <article class="panel">
+        <div class="panel__media img--courses" role="img" aria-label="Course map preview"></div>
+        <div class="panel__body">
+          <span class="eyebrow">Courses & Results</span>
+          <h2>Where We Race</h2>
+          <p>Explore our season’s courses, maps, elevation profiles, weather conditions, and team scoring—all in one clean view.</p>
+          <a class="btn" href="/meets">See Meets & Maps</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- HISTORY TEASER (sticky panel) -->
+    <section id="history" class="band band--history">
+      <article class="panel">
+        <div class="panel__media img--history" role="img" aria-label="Historic MSU XC photo"></div>
+        <div class="panel__body">
+          <span class="eyebrow">Legacy</span>
+          <h2>History & Honors</h2>
+          <p>From early conference titles to today’s Spartans, explore milestones, records, and alumni achievements that shaped MSU Cross Country.</p>
+          <a class="btn" href="/history">Explore History</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Optional: If you prefer a video background in the hero, this is still HTML/CSS only.
+       Replace the :before background with this block (and remove the :before in CSS):
+       <video class="hero__video" autoplay muted loop playsinline poster="hero.jpg">
+         <source src="hero.mp4" type="video/mp4" />
+       </video>
+  -->
+
 </body>
 </html>
